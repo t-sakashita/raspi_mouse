@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.8)
+
+add_subdirectory(blink)
+add_subdirectory(event)
+add_subdirectory(gpio)
+add_subdirectory(i2c)
+add_subdirectory(input)
+add_subdirectory(pwm)
+add_subdirectory(spi)
+add_subdirectory(spin)

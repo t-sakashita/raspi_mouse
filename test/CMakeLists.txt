@@ -1,0 +1,6 @@
+set(PROGRAMS motor buzzer switch distance_sensor led sensor sensore)
+foreach(name ${PROGRAMS})
+  add_executable(${name} ${name}.cpp)
+  target_link_libraries(${name} bcm2835)
+endforeach(name)
+unset(PROGRAMS)

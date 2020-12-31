@@ -1,0 +1,6 @@
+set(PROGRAMS main main_slow_up main_slow_up_english)
+foreach(name ${PROGRAMS})
+  add_executable(${name} ${name}.cpp)
+  target_link_libraries(${name} bcm2835)
+endforeach(name)
+unset(PROGRAMS)
